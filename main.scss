@@ -1,0 +1,157 @@
+$font-stack: cac_champagneregular, Helvetica, sans-serif;
+$bg-color: #FFF;
+$button-height:50px;
+$accent-color:rgb(150, 43, 50);
+$gray:#808080;
+$dark-gray:rgb(90, 90, 90);
+
+body {
+	margin:0;
+	background-image:url("images/pages/background_shifted2.jpg");
+	/*background-image: 
+		linear-gradient(to bottom, white 0%, #43435E 100%),
+		url('images/pages/bgSwirly.jpg');
+	background-image: -moz-linear-gradient(top,#FFF,orange);*/
+	background-blend-mode:multiply;
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	min-height:100vh;
+	#contact{
+		padding:1%;
+		color:black;
+		font-size:1.2em;
+		#contact_links{
+			margin-left:5px;
+			display:inline-block;
+			@media(max-width:1000px){font-size:10px;}
+			a{
+				display:inline-block;
+			    cursor:pointer;
+			    background-size:100%;
+			    height:1.2vw;
+			    margin-top:5px;
+			}
+			#fb_button{
+				width:20px;
+				@media(max-width:700px){
+			    	width:10px;
+			    }
+			}
+		}
+		#contact_links_right{
+			@extend #contact_links;
+			float:right;
+			text-align:right;
+			.ktbyte{
+				text-decoration:none;
+				background:#ea6100;
+				width:auto;
+				padding:5px;
+				border-radius:5px;
+				color:#FFF;
+			}
+		}
+	}
+	#banner{
+		padding-top:3%;
+		font-family: "AquilineTwo";
+		color:black;
+		font-weight:600;
+		text-align:center;
+		margin-bottom:2.5%;
+		font-size:4vw;
+		line-height:1.1em;
+		@media(max-width:700px){font-size:8vw;}
+		#subtext{
+			font-size:2vw;
+			@media(max-width:700px){font-size:4vw;}
+		}
+	}
+	#navbar {
+		font-family:serif;
+		text-align:center;
+		background-color:$accent-color;
+		margin-top:3%;
+		padding:7px;
+		font-size: 1.5vw;	
+		@media(max-width:700px){font-size:2.5vw;}
+		a {
+			color:#FFF;
+			text-decoration: none;
+			vertical-align: center;
+			padding:0 2% 0 2%;
+		}
+	}
+	#content{
+		#title{
+			padding-bottom: 2%;
+			margin-bottom:1%;
+			border-bottom: 1px solid #FFF;
+			font-size:30px;
+			@media(max-width:700px){
+				font-size:20px;
+				text-align:center;
+			}
+		}
+		color:black;
+		margin-top:2%;
+		line-height:130%;
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		font-size:18px;
+		@media(max-width:700px){ font-size:12px;}
+	}
+	@import 'pagecontent';
+	@import 'slider';
+	.button{
+  		a{
+	  		background-color:#705CC2;
+	  		margin:auto;
+	  		margin-top:20px;
+	  		width:150px;
+	  		height:$button-height;
+			line-height:$button-height;
+	  		text-align:center;
+	  		vertical-align:middle;
+	  		display:block;
+  			color:#FFF;
+  			text-decoration:none;
+  			font-size:20px;
+  		}
+  	}
+
+  	a{
+  		color:$accent-color;
+  	}
+}
+
+.vertically_centered{
+	display:inline-block;
+	vertical-align:middle;
+}
+.centered{
+	display:block;
+	margin:auto;
+	width:98%;
+	@media(min-width:700px){ width:60%;}
+}
+.no-mobile{
+	@media(max-width:700px){
+		display:none;
+	}
+}
+
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('fonts/cac_font/cac_champagne-webfont.eot');
+    src: url('fonts/cac_font/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cac_font/cac_champagne-webfont.woff') format('woff'),
+         url('fonts/cac_font/cac_champagne-webfont.ttf') format('truetype'),
+         url('fonts/cac_font/ac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "AquilineTwo";
+    src: url('fonts/AquilineTwo.ttf');
+}
