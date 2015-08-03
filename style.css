@@ -198,6 +198,12 @@ body {
         @media (max-width: 700px) {
           body #page_content .classes_member .location {
             width: 100%; } }
+    body #page_content .pure-table th {
+      background-color: #a5b6d0; }
+    body #page_content .pure-table td {
+      border-left: 1px solid #a5b6d0; }
+    body #page_content .pure-table tr:nth-child(2n-1) td {
+      background-color: #EEF4FF; }
     body #page_content #photo_gallery {
       		/*.crop{
       			display: block;

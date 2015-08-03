@@ -80,7 +80,6 @@
 		}
 	}
 	.classes_member{
-		$name-color:#BBB4E0;
 		padding-top:10px;
 		padding-bottom:10px;
 		overflow:hidden;
@@ -110,6 +109,18 @@
 			float:left;
 			width:50%;
 			@media(max-width:700px){width:100%;};
+		}
+	}
+
+	.pure-table{
+		th{
+			background-color:$accent-slight;
+		}
+		td{
+			border-left:1px solid $accent-slight;
+		}
+		tr:nth-child(2n-1) td{
+			background-color:#EEF4FF;
 		}
 	}
 
