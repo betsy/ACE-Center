@@ -47,7 +47,7 @@ $(document).ready(function() {
   items = (function() {
     var _i, _results;
     _results = [];
-    for (i = _i = 2; _i <= 17; i = ++_i) {
+    for (i = _i = 2; _i <= 7; i = ++_i) {
       figure = $('<figure><div class="crop"><img src="images/homePageSliderResized/image (' + i + ').jpg" width="100%" /></div></figure>');
       $(".diy-slideshow").append(figure);
       _results.push(figure);

@@ -1,8 +1,8 @@
 #page_content{
 	@extend #content;
+	margin-top:2%;
 	p{
 	  margin: 10px 20px;
-	  color: #fff;
 	}
 	#title{
 		border-bottom:1px solid $gray;
@@ -12,7 +12,7 @@
 	color:black;
 	font-size:18px;
 	@media(max-width:700px){ font-size:12px;}
-	background-color:#EFE4D6;
+	background-color:$light;
 	.program_type{
 		border-bottom:1px solid $gray;
 	}
@@ -89,12 +89,12 @@
 		}
 		.name{
 			overflow:hidden;
-			border-bottom:1px solid $name-color;
+			border-bottom:1px solid $accent-color;
 			padding-top:10px;
 			padding-left:5px;
 			margin-bottom:5px;
 			line-height:150%;
-			color:$name-color;
+			color:$accent-color;
 			font-size:25px;
 			@media(max-width:700px){font-size:16px;}
 			.sub{
