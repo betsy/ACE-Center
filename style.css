@@ -25,17 +25,21 @@ body {
         @media (max-width: 700px) {
           body #contact #contact_links #fb_button, body #contact #contact_links_right #fb_button {
             width: 10px; } }
-    body #contact #contact_links_right {
-      float: right;
-      text-align: right; }
-      body #contact #contact_links_right .ktbyte {
-        text-decoration: none;
-        background: #ea6100;
-        height: initial;
-        width: auto;
-        padding: 1px 6px 4px 6px;
-        border-radius: 5px;
-        color: #FFF; }
+    @media (min-width: 700px) {
+      body #contact #contact_links_right {
+        float: right;
+        text-align: right; } }
+    @media (max-width: 700px) {
+      body #contact #contact_links_right {
+        display: block; } }
+    body #contact #contact_links_right .ktbyte {
+      text-decoration: none;
+      background: #ea6100;
+      height: initial;
+      width: auto;
+      padding: 1px 6px 4px 6px;
+      border-radius: 5px;
+      color: #FFF; }
   body #banner {
     padding: 2% 0 2% 0;
     font-family: "Anson";

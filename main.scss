@@ -37,8 +37,11 @@ body {
 		}
 		#contact_links_right{
 			@extend #contact_links;
-			float:right;
-			text-align:right;
+			@media(min-width:700px){
+				float:right;
+				text-align:right;
+			}
+			@media(max-width:700px){ display: block; }
 			.ktbyte{
 				text-decoration:none;
 				background:#ea6100;
