@@ -96,8 +96,7 @@ body {
     font-size: 18px;
     background-color: #EFE4D6; }
     body #page_content p {
-      margin: 10px 20px;
-      color: #fff; }
+      margin: 10px 20px; }
     body #page_content #title {
       border-bottom: 1px solid gray; }
       @media (max-width: 700px) {
