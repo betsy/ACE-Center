@@ -146,16 +146,19 @@ body {
 		display:none;
 	}
 }
+.no-mobile{
+	@media(max-width:700px){
+		display:none;
+	}
+}
+.accent_color{
+	color:$accent-color;
+}
 .pure-g{
 	font-family:inherit;
 }
 .pure-g [class *="pure-u"] {
     font-family: inherit;
-}
-.no-mobile{
-	@media(max-width:700px){
-		display:none;
-	}
 }
 
 @font-face{

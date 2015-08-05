@@ -394,15 +394,18 @@ body {
   .only-mobile {
     display: none; } }
 
+@media (max-width: 700px) {
+  .no-mobile, body #page_content .google_map {
+    display: none; } }
+
+.accent_color {
+  color: #313a61; }
+
 .pure-g {
   font-family: inherit; }
 
 .pure-g [class*="pure-u"] {
   font-family: inherit; }
-
-@media (max-width: 700px) {
-  .no-mobile, body #page_content .google_map {
-    display: none; } }
 
 @font-face {
   font-family: "Anson";
