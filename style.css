@@ -139,8 +139,6 @@ body {
     body #page_content .faculty_member {
       padding-top: 10px;
       padding-bottom: 10px; }
-      body #page_content .faculty_member br {
-        line-height: 250%; }
       body #page_content .faculty_member .name {
         overflow: hidden;
         border: 1px solid #313a61;
@@ -169,14 +167,10 @@ body {
         @media (max-width: 700px) {
           body #page_content .faculty_member .img_right img {
             max-width: 50%; } }
-      body #page_content .faculty_member br {
-        line-height: 10%; }
     body #page_content .classes_member {
       padding-top: 10px;
       padding-bottom: 10px;
       overflow: hidden; }
-      body #page_content .classes_member br {
-        line-height: 250%; }
       body #page_content .classes_member .name {
         overflow: hidden;
         border-bottom: 1px solid #313a61;
@@ -375,6 +369,7 @@ body {
     border-bottom-right-radius: 3px; }
   body .button {
     display: inline-block;
+    margin: 5px 0 5px 0;
     padding: 4px 6px 4px 6px;
     border-radius: 5px;
     background-color: #313a61;
@@ -398,6 +393,12 @@ body {
 @media (min-width: 700px) {
   .only-mobile {
     display: none; } }
+
+.pure-g {
+  font-family: inherit; }
+
+.pure-g [class*="pure-u"] {
+  font-family: inherit; }
 
 @media (max-width: 700px) {
   .no-mobile, body #page_content .google_map {

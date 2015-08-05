@@ -40,9 +40,6 @@
 		$name-color:#E0B4B4;
 		padding-top:10px;
 		padding-bottom:10px;
-		br{
-			line-height:250%;
-		}
 		.name{
 			overflow:hidden;
 			border:1px solid $accent-color;
@@ -75,17 +72,11 @@
 				@media(max-width:700px){max-width:50%;}
 			}
 		}
-		br{
-			line-height:10%;
-		}
 	}
 	.classes_member{
 		padding-top:10px;
 		padding-bottom:10px;
 		overflow:hidden;
-		br{
-			line-height:250%;
-		}
 		.name{
 			overflow:hidden;
 			border-bottom:1px solid $accent-color;
