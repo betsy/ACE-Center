@@ -92,6 +92,13 @@ body {
 			vertical-align: center;
 			padding:0 2% 0 2%;
 		}
+		$hover-color:#47479A;
+		a:hover{
+			background-color:$hover-color;
+		}
+		.currentPage{
+			background-color:$hover-color;
+		}
 	}
 	#dark_stripe{
 		background-color:$accent-slight;

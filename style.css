@@ -79,6 +79,10 @@ body {
       text-decoration: none;
       vertical-align: center;
       padding: 0 2% 0 2%; }
+    body #navbar a:hover {
+      background-color: #47479a; }
+    body #navbar .currentPage {
+      background-color: #47479a; }
   body #dark_stripe {
     background-color: #a5b6d0;
     padding: 2%; }
